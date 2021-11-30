@@ -16,4 +16,17 @@ Capstone Project bidang Pendidikan
 11. Dengan Public IP address : 13.67.116.67
 12. Tahap selanjutnya copy paste IP Public dari virtual machine
 13. Dan lanjut dengan membuka cmd pada windows 10 kemudian masukkan "SSH username@IPPublic"
-14. Serta tidak lupa untuk lakukan login menggunakan password dan username yang telah dibuat sebelumnya
+14. Serta tidak lupa untuk lakukan login menggunakan password dan username yang telah dibuat sebelumny
+
+
+Install Moodle via docker.io
+
+
+1. Untuk tahap pertama ini lakukan update pada virtual machine setelah masuk ke terminal linux menggunakan cmd dengan perintah "sudo apt update"
+2. Selanjutnya lakukan penginstallan pada docker dengan perintah "sudo apt install docker.io"
+3. Kemudian  download file script Moode melalui perintah "curl -sSL https://raw.githubusercontent.com/bitnami/bitnami-docker-moodle/master/docker-compose.yml > docker-compose.yml"
+4. Selanjutnya lakukan penginstalasian tools docker-compose dengan perintah "sudo apt install docker-compose"
+5. Tahap berikutnya eksekusi script dengna perintah "sudo docker-compose up -d"
+6. Setelah selesa melakukan proses eksekusi maka tunggu lah proses eksekusi hingga selesai
+7. Kemudian dapat di akses pada web LMS menggunakan IP Public dari virtual machine
+8. Tahap terakhir lakukan setup DNS menggunakan layanan penyedia setiap DNS sesuai pilihan
